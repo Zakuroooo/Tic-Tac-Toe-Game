@@ -1,4 +1,3 @@
-// add code here
 
 function createBoard(){
     const grid = Array.from(document.querySelector(".game-board").children)
@@ -75,7 +74,9 @@ document.querySelector("body").insertBefore(div, document.querySelector("#restar
 
 div.addEventListener('click', ()=>{
     if(arr.length != 0){
-        let val = arr.pop();
-        val.innerText = "";
+        let cell = arr.pop();
+        cell.innerText = "";
+        val=changeval(val)
+
     }
 });
